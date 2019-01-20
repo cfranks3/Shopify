@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xP3-mH-lgy">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Shopify Challenge-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="CustomCollectionListViewController" id="BYZ-38-t0r" customClass="CustomCollectionListViewController" customModule="ShopifyChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jdK-0f-7pH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListTableViewCell" rowHeight="87" id="Pzo-7G-pPV" customClass="ListTableViewCell" customModule="ShopifyChallenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="87"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Pzo-7G-pPV" id="4hY-OW-cp0">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RS9-h5-Set">
+                                                    <rect key="frame" x="12" y="3" width="70" height="70"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="9nf-ot-1Ej"/>
+                                                        <constraint firstAttribute="width" secondItem="RS9-h5-Set" secondAttribute="height" multiplier="1:1" id="c2N-FT-6Vq"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="2Wo-wa-Lr6">
+                                                    <rect key="frame" x="90" y="19" width="262" height="38"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHO-68-9VT">
+                                                            <rect key="frame" x="0.0" y="0.0" width="262" height="18.5"/>
+                                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUN-Rh-diK">
+                                                            <rect key="frame" x="0.0" y="19.5" width="262" height="18.5"/>
+                                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="2Wo-wa-Lr6" firstAttribute="leading" secondItem="RS9-h5-Set" secondAttribute="trailing" constant="8" id="0bN-pP-MPX"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="2Wo-wa-Lr6" secondAttribute="trailing" constant="8" id="3LV-Tk-tYt"/>
+                                                <constraint firstItem="RS9-h5-Set" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4hY-OW-cp0" secondAttribute="top" constant="2" id="DfF-pf-8ZZ"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="RS9-h5-Set" secondAttribute="bottom" constant="2" id="QhZ-7n-zEL"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="2Wo-wa-Lr6" secondAttribute="bottom" constant="8" id="jia-a6-p9l"/>
+                                                <constraint firstItem="2Wo-wa-Lr6" firstAttribute="top" secondItem="4hY-OW-cp0" secondAttribute="topMargin" constant="8" id="o27-z0-fcb"/>
+                                                <constraint firstItem="RS9-h5-Set" firstAttribute="centerY" secondItem="2Wo-wa-Lr6" secondAttribute="centerY" id="sd3-on-sft"/>
+                                                <constraint firstItem="RS9-h5-Set" firstAttribute="leading" secondItem="4hY-OW-cp0" secondAttribute="leading" constant="12" id="uin-MR-iBd"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="img" destination="RS9-h5-Set" id="MbE-hl-K4D"/>
+                                            <outlet property="lblDetail" destination="rUN-Rh-diK" id="lPR-eR-490"/>
+                                            <outlet property="lblTitle" destination="HHO-68-9VT" id="qE4-Pk-akE"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jdK-0f-7pH" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="4fl-JD-bl9"/>
+                            <constraint firstItem="jdK-0f-7pH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="A2a-Zx-aaY"/>
+                            <constraint firstItem="jdK-0f-7pH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="P5g-E4-4el"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jdK-0f-7pH" secondAttribute="bottom" id="RCu-4Y-Uhs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Shopify Challenge" id="4na-2B-qrc"/>
+                    <connections>
+                        <outlet property="tableView" destination="jdK-0f-7pH" id="QFL-aM-qHX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="129.98500749625188"/>
+        </scene>
+        <!--Collection Detail View Controller-->
+        <scene sceneID="b4w-g3-QmI">
+            <objects>
+                <viewController storyboardIdentifier="CollectionDetailViewController" id="LDS-Dr-co5" customClass="CollectionDetailViewController" customModule="ShopifyChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wfV-Fq-jwU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XYH-cO-9e6">
+                                <rect key="frame" x="0.0" y="200" width="375" height="467"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ListTableViewCell" rowHeight="87" id="mQO-aH-CDP" customClass="ListTableViewCell" customModule="ShopifyChallenge" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="87"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mQO-aH-CDP" id="ZqV-eJ-Iuk">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="86.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ftw-mf-fGJ">
+                                                    <rect key="frame" x="12" y="3" width="70" height="70"/>
+                                                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="LmV-ga-7QJ"/>
+                                                        <constraint firstAttribute="width" secondItem="Ftw-mf-fGJ" secondAttribute="height" multiplier="1:1" id="ZV9-Dj-DMg"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="WcJ-Pr-MKq">
+                                                    <rect key="frame" x="90" y="19" width="262" height="38"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdb-US-7zz">
+                                                            <rect key="frame" x="0.0" y="0.0" width="262" height="18.5"/>
+                                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7z-ok-Ldt">
+                                                            <rect key="frame" x="0.0" y="19.5" width="262" height="18.5"/>
+                                                            <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="13"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="WcJ-Pr-MKq" firstAttribute="leading" secondItem="Ftw-mf-fGJ" secondAttribute="trailing" constant="8" id="0lF-LK-Fkc"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="WcJ-Pr-MKq" secondAttribute="trailing" constant="8" id="Hp6-U0-f4h"/>
+                                                <constraint firstItem="WcJ-Pr-MKq" firstAttribute="top" secondItem="ZqV-eJ-Iuk" secondAttribute="topMargin" constant="8" id="Kva-J4-x43"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="WcJ-Pr-MKq" secondAttribute="bottom" constant="8" id="LJN-sR-VA6"/>
+                                                <constraint firstItem="Ftw-mf-fGJ" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ZqV-eJ-Iuk" secondAttribute="top" constant="2" id="Lne-PT-yaO"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Ftw-mf-fGJ" secondAttribute="bottom" constant="2" id="WNU-Bj-ad4"/>
+                                                <constraint firstItem="Ftw-mf-fGJ" firstAttribute="centerY" secondItem="WcJ-Pr-MKq" secondAttribute="centerY" id="ccX-no-FgU"/>
+                                                <constraint firstItem="Ftw-mf-fGJ" firstAttribute="leading" secondItem="ZqV-eJ-Iuk" secondAttribute="leading" constant="12" id="uFK-0E-jT8"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="img" destination="Ftw-mf-fGJ" id="Udk-g5-cFp"/>
+                                            <outlet property="lblDetail" destination="g7z-ok-Ldt" id="Ues-TK-hJp"/>
+                                            <outlet property="lblTitle" destination="Bdb-US-7zz" id="yxo-l6-fly"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fw1-9S-OXR">
+                                <rect key="frame" x="0.0" y="44" width="375" height="83"/>
+                                <color key="backgroundColor" red="0.90588235289999997" green="0.93333333330000001" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="125" id="VWC-Da-3be"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="CQW-wP-1Ed">
+                                <rect key="frame" x="16" y="141" width="262" height="38"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S68-Z7-yJH">
+                                        <rect key="frame" x="0.0" y="0.0" width="262" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="752" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imy-ZF-5Jg">
+                                        <rect key="frame" x="0.0" y="19.5" width="262" height="18.5"/>
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="13"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WcJ-Pr-MKq" firstAttribute="top" secondItem="wfV-Fq-jwU" secondAttribute="topMargin" constant="227" id="B3e-dm-xx8"/>
+                            <constraint firstItem="Fw1-9S-OXR" firstAttribute="leading" secondItem="MkT-Wt-X7W" secondAttribute="leading" id="GV6-zs-lhw"/>
+                            <constraint firstItem="XYH-cO-9e6" firstAttribute="top" secondItem="CQW-wP-1Ed" secondAttribute="bottom" constant="16" id="HqT-ma-uMO"/>
+                            <constraint firstItem="CQW-wP-1Ed" firstAttribute="leading" secondItem="MkT-Wt-X7W" secondAttribute="leading" constant="16" id="I5v-NI-pkg"/>
+                            <constraint firstItem="MkT-Wt-X7W" firstAttribute="trailing" secondItem="CQW-wP-1Ed" secondAttribute="trailing" constant="16" id="J9Q-P2-ebX"/>
+                            <constraint firstItem="Fw1-9S-OXR" firstAttribute="trailing" secondItem="MkT-Wt-X7W" secondAttribute="trailing" id="JUc-Fj-UgR"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="WcJ-Pr-MKq" secondAttribute="bottom" constant="8" id="LhV-zb-3Mi"/>
+                            <constraint firstItem="MkT-Wt-X7W" firstAttribute="trailing" secondItem="XYH-cO-9e6" secondAttribute="trailing" id="LrS-7Y-zye"/>
+                            <constraint firstItem="MkT-Wt-X7W" firstAttribute="bottom" secondItem="XYH-cO-9e6" secondAttribute="bottom" id="N8o-9D-t4M"/>
+                            <constraint firstItem="Ftw-mf-fGJ" firstAttribute="centerY" secondItem="WcJ-Pr-MKq" secondAttribute="centerY" id="Wgz-aQ-16C"/>
+                            <constraint firstItem="WcJ-Pr-MKq" firstAttribute="leading" secondItem="Ftw-mf-fGJ" secondAttribute="trailing" constant="8" id="ba8-xw-Zwa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WcJ-Pr-MKq" secondAttribute="trailing" constant="7" id="cpT-1T-s1u"/>
+                            <constraint firstItem="XYH-cO-9e6" firstAttribute="leading" secondItem="wfV-Fq-jwU" secondAttribute="leading" id="drl-nT-Sq6"/>
+                            <constraint firstItem="Fw1-9S-OXR" firstAttribute="top" secondItem="wfV-Fq-jwU" secondAttribute="topMargin" id="hEw-fv-lpt"/>
+                            <constraint firstItem="CQW-wP-1Ed" firstAttribute="top" secondItem="Fw1-9S-OXR" secondAttribute="bottom" constant="16" id="wCd-Hr-Ejc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MkT-Wt-X7W"/>
+                    </view>
+                    <connections>
+                        <outlet property="img" destination="Fw1-9S-OXR" id="pp2-4k-hLt"/>
+                        <outlet property="lblCollectionDetail" destination="imy-ZF-5Jg" id="iYa-lR-v0R"/>
+                        <outlet property="lblCollectionTitle" destination="S68-Z7-yJH" id="2eV-Ae-xPG"/>
+                        <outlet property="tableView" destination="XYH-cO-9e6" id="LBa-qy-8bS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jox-tF-vKM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1829.5999999999999" y="121.88905547226388"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8lP-PV-tO7">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xP3-mH-lgy" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O0e-i7-y7e">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NQi-qS-SgA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pVJ-AS-Rr8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="129.98500749625188"/>
+        </scene>
+    </scenes>
+</document>
