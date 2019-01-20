@@ -5,7 +5,7 @@
 //
 //  Created by Haspinder on 20/01/19.
 //  Copyright © 2019 Haspinder. All rights reserved.
-//
+
 
 import Foundation
 import SwiftyJSON
